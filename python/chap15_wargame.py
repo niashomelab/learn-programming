@@ -82,7 +82,7 @@ class Game:
     def __init__(self):
         name1 = input("p1 name: ")
         name2 = input("p2 name: ")
-        self.deck = Deck() # create deck
+        self.deck = Deck() # create a new deck for 2 players
         self.p1 = Player(name1)
         self.p2 = Player(name2)
 
@@ -108,7 +108,7 @@ class Game:
             response = input(m)
             if response == 'q': # quit when press "q"
                 break
-            p1c = self.deck.rm_card()
+            p1c = self.deck.rm_card() # remove drawned card from deck
             p2c = self.deck.rm_card()
             p1n = self.p1.name
             p2n = self.p2.name
@@ -123,9 +123,9 @@ class Game:
                 self.p2.wins += 1
                 self.wins(self.p2.name)
 
-        win = self.winner(self.p1,
-                         self.p2)
-        print("War is over. '{}' wins".format(win))
+        win = self.winner(self.p1, self.p2)
+        print("War is over. '{}' wins".format(win)) # Problem: War is over. 'It was a tie!' wins
+        # all of cards has been drawned; max = 52/2 = 26 rounds
 
     def winner(self, p1, p2):
         # win the game
