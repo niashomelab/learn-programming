@@ -1,14 +1,21 @@
 # SOURCE: the self-taught Programmer; Cory Althoff 
 # WARGAME
+
+"""toDo:
+* fix 'It was a tie'
+* add numbers of win for each player every round(i.e. 'p1' 2 wins, 'p2' 3 wins; after 'p1' wins this round)
 """
+
+"""Desc:
 Create the popular card game 'WAR'. In War, each player draws a card from the deck, and the player with the highest card wins. You will build War by defining classes representing a card, a deck, a player, and finally, the game itself.
 """
+
 from random import shuffle # for class Deck
 
 
 class Card:
     """
-    spades > hearts > diamonds > clubs
+    spades < hearts < diamonds < clubs
     """
     suits = ["SPADES",
              "HEARTS",
