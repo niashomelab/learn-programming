@@ -3,7 +3,7 @@
 """
 Create the popular card game 'WAR'. In War, each player draws a card from the deck, and the player with the highest card wins. You will build War by defining classes representing a card, a deck, a player, and finally, the game itself.
 """
-from random import shuffle
+from random import shuffle # for class Deck
 
 
 class Card:
