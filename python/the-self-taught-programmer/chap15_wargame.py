@@ -136,7 +136,7 @@ class Game:
                 self.wins(self.p2.name)
 
         win = self.winner(self.p1, self.p2)
-        print("War is over. '{}' wins".format(win)) # Problem: War is over. 'It was a tie!' wins
+        print("\nWar is over. '{}' wins".format(win)) # Problem: War is over. 'It was a tie!' wins
         
         # all of cards has been drawn; max = 52/2 = 26 rounds
 
